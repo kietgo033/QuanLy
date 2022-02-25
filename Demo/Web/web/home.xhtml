@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+</h:head>
+<h:body>
+    <p:messages id="messages" showDetail="false" closable="true">
+        <p:autoUpdate/>
+    </p:messages>
+
+
+    <div align="center">
+        <h:form id="frmMain">
+            <h1>
+                ----------QUAN LY--------
+            </h1>
+
+            <p>
+
+                <p:commandButton value="QUAN LY DANH MUC" id="btnCatalog"
+                                 action="catalog?faces-redirect=true"
+                                 update=":messages"/>
+
+            </p>
+            <p>
+                <p:commandButton value="QUAN LY SAN PHAM" id="btnProduct"
+                                 action="product?faces-redirect=true"
+                                 update=":messages"/>
+            </p>
+
+
+        </h:form>
+
+    </div>
+</h:body>
+
+</html>

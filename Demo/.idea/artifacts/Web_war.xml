@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="Web:war">
+    <output-path>$PROJECT_DIR$/Web/web</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Web/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javaee-api-7.0" />
+          <element id="library" level="project" name="jsf" />
+          <element id="library" level="project" name="primefaces-10.0.0" />
+          <element id="library" level="project" name="commons-validator-1.6" />
+          <element id="library" level="project" name="mongodb-driver-3.12.10" />
+          <element id="library" level="project" name="mongodb-driver-core-3.12.10" />
+          <element id="library" level="project" name="bson-3.12.10" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
